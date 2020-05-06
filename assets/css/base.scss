@@ -10,38 +10,67 @@ a {
   text-align: center;
 }
 
-.ml5 {
-  margin-left: 0.05rem;
-}
+$padding-list: (0, 5, 10, 15, 20, 30, 50);
+@each $item in $padding-list {
+  .m#{$item} {
+    margin: #{$item * 0.01}rem !important;
+  }
 
-.ml30 {
-  margin-left: 0.3rem;
-}
+  .mv#{$item} {
+    margin-top: #{$item * 0.01}rem !important;
+    margin-bottom: #{$item * 0.01}rem !important;
+  }
 
-.ml50 {
-  margin-left: 0.5rem;
-}
+  .mh#{$item} {
+    margin-left: #{$item * 0.01}rem !important;
+    margin-right: #{$item * 0.01}rem !important;
+  }
 
-.mt5 {
-  margin-top: 0.05rem;
-}
+  .ml#{$item} {
+    margin-left: #{$item * 0.01}rem !important;
+  }
 
-.mt10 {
-  margin-top: 0.1rem;
-}
+  .mt#{$item} {
+    margin-top: #{$item * 0.01}rem !important;
+  }
 
-.mr5 {
-  margin-right: 0.05rem;
-}
+  .mr#{$item} {
+    margin-right: #{$item * 0.01}rem !important;
+  }
 
-.ph15 {
-  padding-left: 0.15rem;
-  padding-right: 0.15rem;
-}
+  .mb#{$item} {
+    margin-bottom: #{$item * 0.01}rem !important;
+  }
 
-.pv10 {
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
+  .p#{$item} {
+    padding: #{$item * 0.01}rem !important;
+  }
+
+  .pv#{$item} {
+    padding-top: #{$item * 0.01}rem !important;
+    padding-bottom: #{$item * 0.01}rem !important;
+  }
+
+  .ph#{$item} {
+    padding-left: #{$item * 0.01}rem !important;
+    padding-right: #{$item * 0.01}rem !important;
+  }
+
+  .pl#{$item} {
+    padding-left: #{$item * 0.01}rem !important;
+  }
+
+  .pt#{$item} {
+    padding-top: #{$item * 0.01}rem !important;
+  }
+
+  .pr#{$item} {
+    padding-right: #{$item * 0.01}rem !important;
+  }
+
+  .pb#{$item} {
+    padding-bottom: #{$item * 0.01}rem !important;
+  }
 }
 
 .gray {

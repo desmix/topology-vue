@@ -76,9 +76,6 @@ import {
 import {
   register as registerChart
 } from 'topology-chart-diagram'
-import {
-  loadJS
-} from "topology-core/utils/dom";
 
 export function canvasRegister() {
   registerNode(

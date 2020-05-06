@@ -435,7 +435,7 @@ export default {
   .props {
     flex-shrink: 0;
     width: 2.4rem;
-    padding: 0.1rem 0;
+    padding: 0.05rem 0;
     background-color: #f8f8f8;
     border-left: 1px solid #d9d9d9;
     overflow-y: auto;
